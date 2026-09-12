@@ -1,1 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Codemon</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<main class="game">
+
+
+    <!-- =====================================================
+         BATTLEFIELD
+    ====================================================== -->
+
+    <div class="battlefield">
+
+        <div class="sky-glow"></div>
+
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+
+        <div class="tree tree-1"></div>
+        <div class="tree tree-2"></div>
+        <div class="tree tree-3"></div>
+        <div class="tree tree-4"></div>
+
+        <div class="ground"></div>
+
+        <div class="grass grass-1"></div>
+        <div class="grass grass-2"></div>
+        <div class="grass grass-3"></div>
+
+        <div class="battle-platform enemy-platform"></div>
+        <div class="battle-platform player-platform"></div>
+
+        <div class="circuit circuit-1"></div>
+        <div class="circuit circuit-2"></div>
+        <div class="circuit circuit-3"></div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BATTLE EFFECTS
+    ====================================================== -->
+
+    <div
+        id="attackEffect"
+        class="attack-effect"
+    ></div>
+
+
+    <div
+        id="damageText"
+        class="damage-text"
+    ></div>
+
+
+
+    <!-- =====================================================
+         ENEMY TEAM
+    ====================================================== -->
+
+    <div class="team enemy-team">
+
+        <div class="team-title">
+            ERRORMON TEAM
+        </div>
+
+
+        <div class="team-icons">
+
+            <div
+                class="team-icon enemy-icon active"
+                id="enemyIcon1"
+            >
+                E1
+            </div>
+
+
+            <div
+                class="team-icon enemy-icon"
+                id="enemyIcon2"
+            >
+                E2
+            </div>
+
+
+            <div
+                class="team-icon enemy-icon"
+                id="enemyIcon3"
+            >
+                E3
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         ENEMY
+    ====================================================== -->
+
+    <section class="enemy-section">
+
+
+        <div class="pokemon-info enemy-info">
+
+            <div class="hud-label">
+                ERRORMON
+            </div>
+
+
+            <div class="name-level">
+
+                <h2 id="enemyName">
+                    ERRORBYTE
+                </h2>
+
+
+                <span
+                    class="level"
+                    id="enemyLevel"
+                >
+                    Lv. 1
+                </span>
+
+            </div>
+
+
+            <div class="hp-container">
+
+                <div
+                    class="hp-bar enemy-hp"
+                    id="enemyHPBar"
+                ></div>
+
+            </div>
+
+
+            <div class="hp-text">
+
+                <span>
+                    HP
+                </span>
+
+
+                <span>
+
+                    <span id="enemyHPText">
+                        100
+                    </span>
+
+                    /
+
+                    <span id="enemyMaxHPText">
+                        100
+                    </span>
+
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="pokemon enemy"
+            id="enemyPokemon"
+        >
+
+            <img
+                id="enemySprite"
+                class="pokemon-image enemy-image"
+                src="assets/enemy/e1.webp"
+                alt="Enemy ErrorMon"
+            >
+
+            <div class="sprite-shadow"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PLAYER TEAM
+    ====================================================== -->
+
+    <div class="team player-team">
+
+        <div class="team-title">
+            DEBUGMON TEAM
+        </div>
+
+
+        <div class="team-icons">
+
+            <div
+                class="team-icon player-icon active"
+                id="playerIcon1"
+            >
+                D1
+            </div>
+
+
+            <div
+                class="team-icon player-icon"
+                id="playerIcon2"
+            >
+                D2
+            </div>
+
+
+            <div
+                class="team-icon player-icon"
+                id="playerIcon3"
+            >
+                D3
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PLAYER
+    ====================================================== -->
+
+    <section class="player-section">
+
+
+        <div
+            class="pokemon player"
+            id="playerPokemon"
+        >
+
+            <img
+                id="playerSprite"
+                class="pokemon-image player-image"
+                src="assets/player/p1.png"
+                alt="DebugMon"
+            >
+
+            <div class="sprite-shadow"></div>
+
+        </div>
+
+
+
+        <div class="pokemon-info player-info">
+
+            <div class="hud-label">
+                DEBUGMON
+            </div>
+
+
+            <div class="name-level">
+
+                <h2 id="playerName">
+                    BUGMON
+                </h2>
+
+
+                <span
+                    class="level"
+                    id="playerLevel"
+                >
+                    Lv. 1
+                </span>
+
+            </div>
+
+
+            <div class="hp-container">
+
+                <div
+                    class="hp-bar player-hp"
+                    id="playerHPBar"
+                ></div>
+
+            </div>
+
+
+            <div class="hp-text">
+
+                <span>
+                    HP
+                </span>
+
+
+                <span>
+
+                    <span id="playerHPText">
+                        100
+                    </span>
+
+                    /
+
+                    <span id="playerMaxHPText">
+                        100
+                    </span>
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DIALOGUE
+    ====================================================== -->
+
+    <section class="dialogue">
+
+        <div class="dialogue-icon">
+            &gt;_
+        </div>
+
+
+        <p id="message">
+            A wild ErrorMon appeared!
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PYTHON QUESTION
+    ====================================================== -->
+
+    <section class="code-section">
+
+
+        <div class="code-box">
+
+
+            <div class="code-header">
+
+                <span>
+                    🐍 PYTHON DEBUG
+                </span>
+
+
+                <span class="terminal-light">
+                    ● ● ●
+                </span>
+
+            </div>
+
+
+            <!--
+                The broken Python code from
+                questions.js appears here.
+            -->
+
+            <pre id="pythonCode"></pre>
+
+        </div>
+
+
+
+        <!-- ERROR DISPLAY -->
+
+        <div class="error-name">
+
+            ERROR:
+
+            <span id="errorName">
+                READY
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         BATTLE MENU
+    ====================================================== -->
+
+    <section class="battle-menu">
+
+
+        <div class="menu-title">
+            DEBUG COMMANDS
+        </div>
+
+
+        <!--
+            Answer buttons are created
+            automatically by script.js.
+        -->
+
+        <div
+            class="moves"
+            id="moves"
+        ></div>
+
+
+        <!-- SWITCH -->
+
+        <button
+            class="switch-button"
+            id="switchButton"
+            type="button"
+        >
+            ⇄ SWITCH DEBUGMON
+        </button>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+
+     IMPORTANT:
+     questions.js MUST LOAD FIRST.
+====================================================== -->
+
+<script src="questions.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

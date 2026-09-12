@@ -2,39 +2,35 @@
 
 
 
-# [Project Name] 🎯
+# CODEMON🐾
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: LOOKOUTS🔎
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Gladwin Yves Micheal - Toc H  Institute Of Science And Technology 
+- Member 2: Pranav P.C - Toc H  Institute Of Science And Technology 
 
 ### Project Description
-[2-3 lines about what your project does]
+We have just built a python debugger which is combined with the concept of a pokemon gba emulator game. It's just a fun way to debug a code.
+
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+The boredom of debugging a code.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+As the project provides a fun gaming experience while you debug the code.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Java scripts
+- HTML + CSS
+- Pokemon reborn(Berly Library)
+- Microsoft Visual Studio, ChatGPT
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
 For Software:
@@ -48,8 +44,8 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1200" alt="Screenshot 2026-09-12 095328" src="https://github.com/user-attachments/assets/3317a8c8-68a8-48b6-b31b-209b95ae2b73" />
+
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*

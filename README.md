@@ -35,10 +35,19 @@ For Software:
 ### Implementation
 For Software:
 # Installation
-[commands]
+1. Install Visual Studio Code.
+2. Install the Live Server extension in Visual Studio Code.
+3. Download/extract the Codemon project folder.
+4. Open the Codemon folder in Visual Studio Code.
+5. Ensure all HTML, CSS, JavaScript, and asset files are inside the project folder.
 
 # Run
-[commands]
+1. Open the Codemon folder in Visual Studio Code.
+2. Open index.html or title.html.
+3. Right-click title.html.
+4. Select "Open with Live Server".
+5. The Codemon game will open in the web browser.
+6. Click "PRESS START" to begin the game.
 
 ### Project Documentation
 For Software:
@@ -46,48 +55,106 @@ For Software:
 # Screenshots (Add at least 3)
 <img width="1920" height="1200" alt="Screenshot 2026-09-12 095328" src="https://github.com/user-attachments/assets/3317a8c8-68a8-48b6-b31b-209b95ae2b73" />
 
+<img width="1260" height="807" alt="Screenshot 2026-09-12 095833" src="https://github.com/user-attachments/assets/2eb08c44-6840-4a9a-9c28-23612e923683" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1261" height="811" alt="Screenshot 2026-09-12 100217" src="https://github.com/user-attachments/assets/fd0ca238-eb4b-4137-b643-89a032f9785d" />
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+```text
+                    CODEMON WORKFLOW
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    Start Game       │
+                │    Title Screen     │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    PRESS START      │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   ErrorMon Appears  │
+                │     3 vs 3 Battle   │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Display Broken      │
+                │ Python Code + Error │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Select Debugging    │
+                │       Fix           │
+                └──────────┬──────────┘
+                           │
+                    ┌──────┴──────┐
+                    │             │
+                    ▼             ▼
+              ┌──────────┐  ┌──────────┐
+              │ Correct   │  │  Wrong   │
+              │ Answer    │  │ Answer   │
+              └────┬─────┘  └────┬─────┘
+                   │              │
+                   ▼              ▼
+             ┌────────────┐ ┌────────────┐
+             │ ErrorMon   │ │ DebugMon   │
+             │ Takes      │ │ Takes      │
+             │ Damage     │ │ Damage     │
+             └─────┬──────┘ └─────┬──────┘
+                   │              │
+                   └──────┬───────┘
+                          │
+                          ▼
+                ┌───────────────────┐
+                │    Check HP       │
+                └─────────┬─────────┘
+                          │
+                    ┌─────┴─────┐
+                    │           │
+                    ▼           ▼
+             ┌──────────┐  ┌────────────┐
+             │ Pokémon  │  │ Continue   │
+             │ Fainted? │  │  Battle    │
+             └────┬─────┘  └──────┬─────┘
+                  │               │
+                  ▼               ▼
+             ┌──────────┐   ┌────────────┐
+             │ Switch   │   │ Display    │
+             │ Pokémon  │   │ Next Error │
+             └────┬─────┘   └──────┬─────┘
+                  │               │
+                  └───────┬───────┘
+                          │
+                          ▼
+                    Repeat Battle
+                          │
+                          ▼
+                ┌───────────────────┐
+                │ Team Completely   │
+                │     Defeated?     │
+                └─────────┬─────────┘
+                          │
+                    ┌─────┴─────┐
+                    │           │
+                    ▼           ▼
+              ┌─────────┐  ┌─────────┐
+              │ VICTORY │  │ DEFEAT  │
+              └─────────┘  └─────────┘
+```
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
+https://drive.google.com/file/d/1Hd25Z-p7yn1Mbd5lSH50MmdyDkI4qAp_/view?usp=sharing
+The battle mechanics.
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- PRANAV P.C : UI(HTML+CSS) + DATA COLLECTION
+- GLADWIN YVES MICHEAL :BACKEND + TITLECARD(HTML+CSS) + CORE IDEA
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
